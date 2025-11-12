@@ -51,3 +51,27 @@ PRODUCT_COPY_FILES += \
     vendor/custom/adreno/proprietary/vendor/lib64/libllvm-qgl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libllvm-qgl.so \
     vendor/custom/adreno/proprietary/vendor/lib64/libOpenCL.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOpenCL.so \
     vendor/custom/adreno/proprietary/vendor/lib64/libOpenCL_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOpenCL_adreno.so
+
+# Override stock Adreno libraries with custom versions
+PRODUCT_PACKAGES += \
+    libEGL_adreno \
+    libGLESv1_CM_adreno \
+    libGLESv2_adreno \
+    libq3dtools_adreno \
+    libq3dtools_esx \
+    libVkLayer_ADRENO_qprofiler \
+    vulkan.adreno \
+    libadreno_app_profiles \
+    libadreno_utils \
+    libCB \
+    libdmabufheap \
+    libgame_enhance \
+    libgpudataproducer \
+    libgsl \
+    libkcl \
+    libkernelmanager \
+    libllvm-glnext \
+    libllvm-qcom \
+    libllvm-qgl \
+    libOpenCL \
+    libOpenCL_adreno
